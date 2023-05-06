@@ -48,6 +48,7 @@ services:
     restart: always
     environment:
       MYSQL_DATABASE: mobijet
+      MYSQL_ROOT_PASSWORD: root
     volumes:
       - db-data:/var/lib/mysql
     networks:
